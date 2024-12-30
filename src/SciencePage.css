@@ -1,0 +1,77 @@
+.science-page-container {
+    padding-top: 160px; /* Adjust this value based on the height of your navbar */
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px; /* Adjust spacing between dropdowns */
+    margin-left: 100px;;
+}
+
+.dropdown-toggle {
+    padding: 10px;
+    background-color: #eeb600;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px; /* Adjust width as needed */
+}
+
+.dropdown-toggle:hover {
+    background-color: #eeb600;
+}
+
+.dropdown-icon {
+    transition: transform 0.3s ease;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 220px; /* Adjust width to match the toggle button */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.3s ease;
+    z-index: 1;
+}
+
+.dropdown-content.show {
+    max-height: 300px; /* Adjust as needed */
+    opacity: 1;
+}
+
+.tamil-items-list {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.tamil-item {
+    margin: 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    cursor: pointer;
+}
+
+.tamil-item:hover {
+    background-color: #e0e0e0;
+}
